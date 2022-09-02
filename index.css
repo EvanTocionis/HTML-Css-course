@@ -1,0 +1,32 @@
+html {
+    Font size: 62.5%;
+}
+
+button {
+    margin: 5rem;
+    padding: 2rem 4rem;
+    background: none;
+    border: 0.3rem solid rgb(243, 199, 4);
+    color: rgb(243, 199, 4);
+    font-size: 2.4rem;
+    border-radius: 1rem;
+    border-top-left-radius: 2rem;
+    background: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+Button:focus {
+    background: greenyellow;
+}
+
+input {
+    margin-right: 2rem;
+}
+
+p {
+    text-align: center;
+}
