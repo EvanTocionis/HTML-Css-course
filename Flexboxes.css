@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid black;
+    display: flex;
+    /* Flex-direction: column; row, column-reverse, row reverse */
+    /* flex-wrap: wrap;  wrap-reverse */
+    justify-content: Space-around; /* Space-evenly, Flex-end, flex-start, center */
+    align-items: center; /* Stretch(when box height not set), baseline */
+    height: 50vh;
+}
+
+.box {
+    height: 10rem;
+    Width: 10rem;
+    /*Flex-basis: 10rem. starting point of growth/shrink*/
+}
+.box1 {
+    background: rgb(0, 255, 234);
+    order: 1;  
+    /*flex-grow: 1 or 2 =how many times bigger this box is compared to others. Use on two sections to size them with eachother*/
+}   /*Flex-shrink*/
+.box2 {
+    background:rgb(255, 196, 0);
+    order: 2;
+}
+.box3 {
+    background:rgb(204, 22, 31);
+    order: 3;
+}
+.box4 {
+    background: rgb(169, 5, 219);
+    order: 4;
+    /*align-self: baseline;*/
+}
+.box5 {
+    background:rgb(3, 73, 30);
+    order: 5;
+}
+.box6 {
+    background:rgb(66, 77, 76);
+    order: 6;
+}
