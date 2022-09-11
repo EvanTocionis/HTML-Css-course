@@ -42,7 +42,28 @@ nav ul {
 .intro {
     /*div needed aroung text to display in horizontal paragrpahs*/
     display: flex;
+    flex-wrap: wrap;
 }
-img {
-    height: 20rem
+.intro img {
+    width: 100%;
+    height: 100%
 }
+.intro-img {
+    flex: 1 1 30rem;
+    background: lightblue
+}
+
+.intro-text {
+    flex: 1 1 30rem;
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro-text h2{
+    padding: 2rem;
+}
+.intro-text p{
+    padding: 1rem;
+}
+ 
