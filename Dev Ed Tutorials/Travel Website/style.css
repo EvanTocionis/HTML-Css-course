@@ -8,6 +8,9 @@
 html {
     font-size: 62.5%
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 h1 {
     font-size: 2.6rem;
 }
@@ -19,13 +22,26 @@ h2 {
 }
 h3 {
     font-size: 3rem;
+    font-weight: normal;
 }
 h4,h5 {
     font-size: 2.8rem
 }
 a{
     color: white;
-    text-deco
+    text-decoration: none;
+}
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 1s ease-in-out;
+}
+button:hover{
+    background: #27394e;
 }
 
 
@@ -35,3 +51,106 @@ a{
     background: #131c27;
     color: White;
 }
+nav{ 
+    
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo {
+    flex: 2 1 20rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+}
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),url("/Dev Ed Tutorials/Travel Website/images/travelly-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h3{
+    padding: 5rem;
+
+}
+
+/* LOCATIONS SECTION */
+
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),
+     url("/Dev Ed Tutorials/Travel Website/images/new-york-page.jpg");
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     position: relative;
+}
+.locations-head {
+    width: 90%;
+    margin: auto;
+}
+.locations-head h2{
+    padding: 1rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+    padding: 4rem 0rem;
+    background: linear-gradient(#131c27, #663b34);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.moving-cloud-1 {
+
+}
+.moving-cloud-2 {
+    top: 20%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@keyframes cloudAnimation{
+    0%{
+        background:lightblue;
+    }
+    25%{
+        background: ;
+    }
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 710px) {
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem;
+    }
